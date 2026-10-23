@@ -1,0 +1,17 @@
+[
+  {
+    "image": "files/p00/p00000000/s00000002/current.pgm",
+    "bbox_coordinates": [
+      [4, 4, 8, 8]
+    ],
+    "bbox_labels": [
+      "right lower lung zone"
+    ],
+    "bbox_phrase_exists": [
+      true
+    ],
+    "bbox_is_abnormal": [
+      true
+    ]
+  }
+]

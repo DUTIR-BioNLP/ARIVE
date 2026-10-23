@@ -1,0 +1,12 @@
+[
+  {
+    "id": "grounded-devices",
+    "report": "Portable AP chest radiograph. The endotracheal tube terminates 6 cm above the carina. An enteric tube passes below the diaphragm with its tip outside the field of view. Lung volumes are low, with mild bibasilar atelectasis. The cardiomediastinal contours are unchanged. No pneumothorax.",
+    "reasoning": "I begin with this portable AP chest radiograph and review the devices. The endotracheal tube terminates 6 cm above the carina. The enteric tube passes below the diaphragm, with its tip outside the field of view.\n\nTurning to the lungs, I note low volumes with mild bibasilar atelectasis. The cardiomediastinal contours are described as unchanged, and there is no pneumothorax.\n\nIn summary, the findings are low lung volumes with mild bibasilar atelectasis, the stated tube positions, unchanged cardiomediastinal contours, and no pneumothorax."
+  },
+  {
+    "id": "grounded-uncertainty",
+    "report": "There is a possible small left pleural effusion with adjacent left basal opacity that may represent atelectasis. The right lung is clear. Heart size is normal. No pneumothorax.",
+    "reasoning": "I first assess the left lung base, where a small pleural effusion is possible. The adjacent left basal opacity may represent atelectasis; I retain that uncertainty. The right lung is clear.\n\nNext, I review the cardiac silhouette, which is normal in size. No pneumothorax is identified.\n\nIn summary, the principal findings are a possible small left pleural effusion and adjacent opacity that may represent atelectasis, with a clear right lung, normal heart size, and no pneumothorax."
+  }
+]

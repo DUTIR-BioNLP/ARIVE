@@ -1,0 +1,10 @@
+[
+  {
+    "id": "synthetic-current-0001",
+    "image": [
+      "files/p00/p00000000/s00000002/current.pgm",
+      "files/p00/p00000000/s00000001/prior.pgm"
+    ],
+    "report": "Synthetic example: a mild right basilar opacity is new compared with the synthetic prior image."
+  }
+]

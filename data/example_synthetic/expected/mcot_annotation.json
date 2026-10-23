@@ -1,0 +1,20 @@
+[
+  {
+    "id": "synthetic-current-0001",
+    "image": [
+      "files/p00/p00000000/s00000001/prior.pgm",
+      "files/p00/p00000000/s00000002/current.pgm",
+      "files/p00/p00000000/s00000002/current.pgm_500_500_1000_1000"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are an assistant in radiology, responsible for analyzing medical imaging studies and generating detailed, structured, and accurate radiology reports.\n\nIndication: Synthetic cough example\nPrior chest X-ray:\n<image>\nPrior findings:Synthetic example: no focal right basilar opacity is present.\nCurrent chest X-ray:\n<image>\nBefore answering, think step by step internally. In your internal thinking, output the bounding box of the key diagnostic region in the format <|object_ref_start|>anatomical object name<|object_ref_end|><|box_start|>x1 y1 x2 y2<|box_end|>. Generate a comprehensive and detailed description of findings based on the current chest X-ray image and the indication. Include a thorough comparison with a prior chest X-ray, emphasizing any significant changes, progression, or improvement."
+      },
+      {
+        "from": "gpt",
+        "value": "<think>\nI review the synthetic current image in a fixed sequence. <|object_ref_start|>right lower lung zone<|object_ref_end|><|box_start|>500 500 1000 1000<|box_end|>\n<image>\nThe right lower lung zone contains a mild synthetic opacity. Compared with the synthetic prior image, this opacity is new.\n</think>\nSynthetic example: a mild right basilar opacity is new compared with the synthetic prior image."
+      }
+    ]
+  }
+]

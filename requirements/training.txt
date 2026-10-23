@@ -1,0 +1,18 @@
+# Tested reference environment. Install the PyTorch build matching your CUDA
+# driver first if the default PyPI wheel is not appropriate for your system.
+torch==2.10.0
+torchvision==0.25.0
+transformers==4.57.3
+deepspeed==0.18.4
+accelerate==1.12.0
+peft==0.18.1
+vllm==0.19.0
+verl==0.7.1
+qwen-vl-utils==0.0.14
+triton==3.6.0
+numpy==2.2.6
+Pillow==12.1.0
+safetensors==0.7.0
+scipy==1.15.3
+tensorboard==2.20.0
+radgraph==0.1.18

@@ -1,0 +1,13 @@
+ARIVE
+
+This distribution contains modified fine-tuning utilities derived from the
+Qwen-VL fine-tuning framework published by the Qwen team under the Apache
+License 2.0. The upstream projects are:
+
+  https://github.com/QwenLM/Qwen3-VL
+  https://github.com/QwenLM/Qwen2.5-VL/tree/main/qwen-vl-finetune
+
+The repository also integrates, but does not redistribute, third-party models
+and datasets including Qwen3-VL, GPT-OSS, MIMIC-CXR, CheXbert, and RadGraph.
+Those assets retain their own licenses, access requirements, and terms of use.
+

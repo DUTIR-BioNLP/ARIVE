@@ -1,0 +1,42 @@
+# Restricted datasets and generated annotations
+/data/*
+*.jsonl
+*_dataset.json
+*_annotation.json
+
+# Track only documentation and the synthetic public fixture under data/.
+!/data/README.md
+!/data/example_synthetic/
+!/data/example_synthetic/**
+/data/example_synthetic/work/
+/data/example_synthetic/output/
+
+# data/sample/ is intentionally private: it may contain a real restricted case.
+/data/sample/
+
+# Model artifacts and training outputs
+/outputs/
+/checkpoints/
+**/checkpoint-*/
+**/vllm/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Logs and experiment trackers
+*.log
+nohup.out
+wandb/
+runs/
+
+# Python/editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.idea/
+.vscode/

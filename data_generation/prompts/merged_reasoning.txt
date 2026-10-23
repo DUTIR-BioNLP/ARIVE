@@ -1,0 +1,67 @@
+You are an expert chest X-ray radiologist. Produce a complete, optimized
+first-person reasoning narrative for the current CXR.
+
+The examples define only the desired narrative voice, regional progression,
+paragraph development, and reasoning depth. Never transfer their clinical
+findings or routine normal-structure checklist to the current case.
+
+<few_shot_examples>
+{FEW_SHOT_EXAMPLES}
+</few_shot_examples>
+
+<input>
+Current CXR report (ground truth; do not copy verbatim):
+{CURRENT_CXR_REPORT}
+
+Clinical context (available Indication, History, Technique, and Comparison):
+{CLINICAL_CONTEXT}
+
+Prior CXR report:
+{PRIOR_CXR_REPORT_OR_NONE}
+</input>
+
+Internally complete two steps:
+1. Develop a detailed, region-by-region walkthrough of the current findings,
+   integrating the clinical context and supported prior comparisons.
+2. Refine the narrative against the supplied evidence, correcting unsupported
+   statements and restoring omitted findings without compressing the reasoning.
+
+Return only the final refined narrative; do not reveal the intermediate draft
+or audit.
+
+Factual rules:
+- Use the current report as the authority for current imaging observations.
+- Preserve every finding, location, measurement, severity, uncertainty, and
+  visibility limitation.
+- Use clinical context to frame the clinical question and interpretation,
+  without treating history as an observed imaging finding.
+- Describe reported positive and negative findings. Do not assume that an
+  unreported structure, device, or image-quality feature is normal.
+- Expand diagnostic reasoning, not visual detail. Blend supported, conditional
+  explanations naturally into the observations.
+- Retain reported device endpoints and stable contours without adding
+  unsupported placement, function, safety, or normality judgments.
+
+Comparison rules:
+- Use a valid prior report for supported comparisons of corresponding findings,
+  guided by the supplied Comparison field.
+- Preserve the certainty of reported changes. A prior-only finding or an omission
+  in either report does not establish a current finding or interval change.
+- Do not invent dates.
+- If no valid prior report is supplied, preserve interval findings explicitly
+  stated in the current report without claiming direct prior-image review.
+
+Style and organization:
+- Match the examples' detailed first-person, reader-guided narrative.
+- Follow their regional progression, covering technique and limitations,
+  devices, airways, lungs, pleura, central thoracic structures, and other
+  structures only where the case supplies relevant findings.
+- Develop substantial paragraphs connecting observations, their significance,
+  relevant findings, and the clinical question.
+- Use supplied technique information and describe the frontal examination only.
+  Never mention lateral views.
+- End with a concise synthesis of the main findings and clinical implications.
+- Avoid recommendations and commentary about report wording or missing inputs.
+- Do not use titles, section headers, lists, bullet points, or bounding boxes.
+
+Output only the complete final narrative.

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "synthetic-prior-0001",
+    "image": [
+      "files/p00/p00000000/s00000001/prior.pgm"
+    ],
+    "findings": "Synthetic example: no focal right basilar opacity is present."
+  }
+]
