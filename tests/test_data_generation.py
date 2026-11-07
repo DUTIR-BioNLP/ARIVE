@@ -209,7 +209,7 @@ class ReasoningPromptTest(unittest.TestCase):
 
 
 class AnatomyPreparationTest(unittest.TestCase):
-    def test_standard_and_legacy_normalization_are_explicit(self) -> None:
+    def test_normalization_uses_width_and_height_with_either_legacy_flag(self) -> None:
         box = [10, 20, 60, 100]
         self.assertEqual(
             normalize_box(box, width=100, height=200, legacy_swapped_dimensions=False),
@@ -217,7 +217,7 @@ class AnatomyPreparationTest(unittest.TestCase):
         )
         self.assertEqual(
             normalize_box(box, width=100, height=200, legacy_swapped_dimensions=True),
-            [50, 200, 300, 1000],
+            [100, 100, 600, 500],
         )
 
     def test_prepare_and_attach_anatomy(self) -> None:
