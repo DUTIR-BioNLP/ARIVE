@@ -79,8 +79,8 @@ def normalize_box(
 ) -> list[int]:
     if not isinstance(box, (list, tuple)) or len(box) != 4:
         raise ValueError(f"invalid pixel-space box: {box!r}")
-    x_scale = height if legacy_swapped_dimensions else width
-    y_scale = width if legacy_swapped_dimensions else height
+    x_scale = width
+    y_scale = height
     x1, y1, x2, y2 = (float(value) for value in box)
     normalized = [
         round(x1 / x_scale * 1000),
